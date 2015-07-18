@@ -40,9 +40,10 @@ header#header {
 }
 .message-text::before {
 	border-bottom: 5vh solid transparent;
-	border-right: 5vh solid white;
-	border-style: solid;
 	border-top: 5vh solid transparent;
+	border-right: 5vh solid white;
+	/*border-style: solid;*/
+	/*border-top: 5vh solid transparent;*/
 	content: "";
 	font-size: 0;
 	height: 0;
