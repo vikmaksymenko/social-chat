@@ -8,6 +8,18 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 	
+	<style>
+/*		.message.dummy {
+			transform: translateY(-100%);
+		}
+
+		.message {
+			transform: translateY(0);
+			-webkit-transition: all 2s; /* Safari */
+    		transition: transform 2s;
+		} */
+	</style>
+
 </head>
 <body>
 	<header id="header" class="">
@@ -17,7 +29,7 @@
 		</p> -->
 	</header><!-- /header -->
 	<div class="main col-md-10 col-md-offset-1">
-		<div class="message row">
+		<div class="message dummy row hidden">
 			<div class="message-authore col-md-2">
 				<figure class="text-center">
 					<img src="http://placehold.it/150x150" class="author-img img-circle img-thumbnail img-responsive">
@@ -25,58 +37,8 @@
 				</figure>
 			</div>
 			<div class="message-text col-md-10 bg-info">
-				<h4>Тема</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint rerum velit dolores minima laboriosam fugiat qui numquam, voluptatem, fugit aut molestias fuga aliquam eius libero quidem eaque! Voluptatem, amet qui quia debitis et iure sit, nesciunt, repellendus sunt reiciendis quod minus error ipsa nihil itaque architecto sed rerum, aut repudiandae? Quos repudiandae deserunt voluptatibus odio. Quis explicabo iure neque, animi, numquam similique nisi expedita distinctio facere earum ea voluptatibus sed, possimus repellat dicta consequuntur eveniet facilis nihil voluptates aliquid, necessitatibus fuga incidunt pariatur. Dolores id ducimus deserunt rem omnis maiores asperiores, animi suscipit. Dolore atque totam quia alias quaerat id.</p>
-				<footer>
-					<em class="message-date pull-left">Date</em>
-					<b class="message-likes-n-comments pull-right">
-						<span class="likes">
-							<span class="glyphicon glyphicon-heart"></span>
-							<span class="likes-number">15</span>
-						</span>
-						<span class="comments">
-							<span class="glyphicon glyphicon-comment"></span>
-							<span class="comments-number">42</span>
-						</span>
-					</b>
-				</footer>
-			</div>
-		</div>
-				<div class="message row">
-			<div class="message-authore col-md-2">
-				<figure class="text-center">
-					<img src="http://placehold.it/150x150" class="author-img img-circle img-thumbnail img-responsive">
-					<figcaption>Мое Имя</figcaption>
-				</figure>
-			</div>
-			<div class="message-text col-md-10 bg-info">
-				<h4>Тема</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint rerum velit dolores minima laboriosam fugiat qui numquam, voluptatem, fugit aut molestias fuga aliquam eius libero quidem eaque!</p>
-				<footer>
-					<em class="message-date pull-left">Date</em>
-					<b class="message-likes-n-comments pull-right">
-						<span class="likes">
-							<span class="glyphicon glyphicon-heart"></span>
-							<span class="likes-number">15</span>
-						</span>
-						<span class="comments">
-							<span class="glyphicon glyphicon-comment"></span>
-							<span class="comments-number">42</span>
-						</span>
-					</b>
-				</footer>
-			</div>
-		</div>
-						<div class="message row">
-			<div class="message-authore col-md-2">
-				<figure class="text-center">
-					<img src="http://placehold.it/150x150" class="author-img img-circle img-thumbnail img-responsive">
-					<figcaption>Мое Имя</figcaption>
-				</figure>
-			</div>
-			<div class="message-text col-md-10 bg-info">
-				<h4>Тема</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint rerum velit dolores minima laboriosam fugiat qui numquam, voluptatem, fugit aut molestias fuga aliquam eius libero quidem eaque!</p>
+				<h4 class="message-title">Тема</h4>
+				<p class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint rerum velit dolores minima laboriosam fugiat qui numquam, voluptatem, fugit aut molestias fuga aliquam eius libero quidem eaque! Voluptatem, amet qui quia debitis et iure sit, nesciunt, repellendus sunt reiciendis quod minus error ipsa nihil itaque architecto sed rerum, aut repudiandae? Quos repudiandae deserunt voluptatibus odio. Quis explicabo iure neque, animi, numquam similique nisi expedita distinctio facere earum ea voluptatibus sed, possimus repellat dicta consequuntur eveniet facilis nihil voluptates aliquid, necessitatibus fuga incidunt pariatur. Dolores id ducimus deserunt rem omnis maiores asperiores, animi suscipit. Dolore atque totam quia alias quaerat id.</p>
 				<footer>
 					<em class="message-date pull-left">Date</em>
 					<b class="message-likes-n-comments pull-right">
@@ -96,5 +58,9 @@
 	<footer id="footer">
 		<!-- <small>With love, Junior Readdlers</small> -->
 	</footer>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/controllers/socialcast.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
