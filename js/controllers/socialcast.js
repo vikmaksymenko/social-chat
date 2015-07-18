@@ -29,13 +29,13 @@ module.exports = {
     getMessages: function (stream) {
         streamID = getStreamID(stream);
         
-        if(streamID === -1) {
-            var data = _url + "/api/streams/" + streamID + "/messages.json?email=" + _email + "&password=" + _password;
+        if(streamID !== -1) {
+            var data = _url + "/api/streams/" + streamID + "/messages.json";
             
-            xhr.open("GET", data, false);
+            xhr.open("GET", data, false, _email, _password);
             xhr.send();
             
-            return xhr.responseText;
+            return JSON.parse(xhr.responseText).messages;
         } else {
             console.error("Don't found stream '" + stream + "'");
         }
@@ -44,17 +44,17 @@ module.exports = {
 
 
 function getStreamID(stream) {
-    var data = _url + "/api/streams.json?email=" + _email + "&password=" + _password;
+    var data = _url + "/api/streams.json";
     
-    xhr.open("GET", data, false);
+    xhr.open("GET", data, false, _email, _password);
     xhr.send();
-    
-    var response = JSON.parse(xhr.responseText);
+
+    var streams = JSON.parse(xhr.responseText).streams;
     
     //Searching stream with needed name and returning ID
-    for (var i = 0; i < response.length; i++) {
-        if(response[i].name === stream) {
-            return response[i].id;
+    for (var i = 0; i < streams.length; i++) {
+        if(streams[i].name === stream) {
+            return streams[i].id;
         }
     }
     return -1;
