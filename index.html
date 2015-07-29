@@ -4,22 +4,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Social Chat Demo</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
 	<link rel="stylesheet" href="css/main.css">
-	
-	<style>
-/*		.message.dummy {
-			transform: translateY(-100%);
-		}
-
-		.message {
-			transform: translateY(0);
-			-webkit-transition: all 2s; /* Safari */
-    		transition: transform 2s;
-		} */
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
 </head>
 <body>
 	<header id="header" class="">
@@ -28,26 +16,27 @@
 			<img src="http://www.aston.ac.uk/EasysiteWeb/getresource.axd?AssetID=174850&type=custom&servicetype=Inline&customSizeId=16" alt="">
 		</p> -->
 	</header><!-- /header -->
-	<div class="main col-md-10 col-md-offset-1">
-		<div class="message dummy row hidden">
-			<div class="message-authore col-md-2">
+	<div class="main">
+		<div class="message dummy hidden">
+			<div class="message-author text-right">
 				<figure class="text-center">
-					<img src="http://placehold.it/150x150" class="author-img img-circle img-thumbnail img-responsive">
+					<img src="http://placehold.it/140x140" class="author-img img-circle img-thumbnail img-responsive" height="140" width="140">
 					<figcaption>Мое Имя</figcaption>
 				</figure>
 			</div>
-			<div class="message-text col-md-10 bg-info">
+			<div class="message-text bg-info">
+				<div class="arrow"></div>
 				<h4 class="message-title">Тема</h4>
-				<p class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint rerum velit dolores minima laboriosam fugiat qui numquam, voluptatem, fugit aut molestias fuga aliquam eius libero quidem eaque! Voluptatem, amet qui quia debitis et iure sit, nesciunt, repellendus sunt reiciendis quod minus error ipsa nihil itaque architecto sed rerum, aut repudiandae? Quos repudiandae deserunt voluptatibus odio. Quis explicabo iure neque, animi, numquam similique nisi expedita distinctio facere earum ea voluptatibus sed, possimus repellat dicta consequuntur eveniet facilis nihil voluptates aliquid, necessitatibus fuga incidunt pariatur. Dolores id ducimus deserunt rem omnis maiores asperiores, animi suscipit. Dolore atque totam quia alias quaerat id.</p>
+				<p class="message-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint rerum velit dolores minima laboriosam fugiat qui numquam, voluptatem, fugit aut molestias fuga aliquam eius libero quidem eaque! Voluptatem, amet qui quia debitis et iure sit, nesciunt, repellendus sunt reiciendis quod minus error ipsa nihil itaque architecto sed rerum, aut repudiandae? Quos repudiandae deserunt voluptatibus odio. Quis explicabo iure neque, animi, numquam similique nisi expedita distinctio facere earum ea voluptatibus sed, possimus repellat dicta consequuntur eveniet facilis nihil voluptates aliquid, necessitatibus fuga incidunt pariatur. Dolores id ducimus deserunt rem omnis maiores asperiores, animi suscipit. Dolore atque totam quia alias quaerat id.</p>
 				<footer>
-					<em class="message-date pull-left">Date</em>
-					<b class="message-likes-n-comments pull-right">
+					<em class="message-date">Date</em>
+					<b class="message-likes-n-comments">
 						<span class="likes">
-							<span class="glyphicon glyphicon-heart"></span>
+							<i class="icon-heart"></i>
 							<span class="likes-number">15</span>
 						</span>
 						<span class="comments">
-							<span class="glyphicon glyphicon-comment"></span>
+							<i class="icon-comment"></i>
 							<span class="comments-number">42</span>
 						</span>
 					</b>
@@ -59,8 +48,7 @@
 		<!-- <small>With love, Junior Readdlers</small> -->
 	</footer>
 	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/controllers/socialcast.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- // <script src="js/bootstrap.min.js"></script> -->
 	<script src="js/main.js"></script>
 </body>
 </html>
