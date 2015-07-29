@@ -1,36 +1,13 @@
-html {
-font-family: 'Open Sans', sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-
 body {
 	background: rgba(222, 33, 33, .1);
 	height: 100vh;
-	margin: 0;
-    overflow: hidden;
-    line-height: 1.5;
-    text-align: left;
 }
-
-p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
 header#header {
 	padding: 1vh 1vw;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
 }
-
-.hidden {
-	opacity: 0;
-}
-
 .readdle-logo, .readdle-logo img {
 	height: 100%;
 }
@@ -43,79 +20,39 @@ header#header {
 }
 .main {
 	height: 100%;
-	width: 80%;
-	margin: 0 auto;
 	overflow: hidden;
 }
 .message {
-	/*min-height: 20vh;*/
-	/*padding: 1vh;*/
-	margin: 5vh;
-	
-
+	min-height: 250px;
+	padding: 5vh;
 }
-
 .message-author {
-	width: 15%;
-	float: left;
 }
-
-.message-author figure {
-	display: inline-block;
-	float: right;
-	margin-right: 2vh;
-    margin-top: 0;
-    text-align: center;
-}
-
 .author-img {
-/*	height: 10vh;
-	width: 10vh;
-    margin-right: 2vh;
-    margin-top: 2vh; */
-    border-radius: 50%;
-	display: inline-block;
- 	width: auto;
-  	height: 10vh;
-  	padding: 4px;
-  	line-height: 1.42857143;
-  	background-color: #fff;
- 	border: 1px solid #ddd;
-  	-webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+	height: 20vh;
+	margin-top: 10px;
 }
 .message-text {
 	background: white;
-	border-radius: 3vh;
-	padding: 2vh 4vh;
-	width: 85%;
-	display: inline-block;
-	box-sizing: border-box;
+	border-radius: 5vh;
+	min-height: 25vh;
+	padding: 5vh;
 }
-
-.message-text-content {
-	min-height: 10vh;
-	max-height: 50vh;
-	overflow: hidden;
-}
-
 .message-text::before {
-	border-bottom: 2vh solid transparent;
-	border-top: 2vh solid transparent;
-	border-right: 2vh solid white;
-	position: absolute;
+	border-bottom: 5vh solid transparent;
+	border-top: 5vh solid transparent;
+	border-right: 5vh solid white;
+	/*border-style: solid;*/
+	/*border-top: 5vh solid transparent;*/
 	content: "";
+	font-size: 0;
 	height: 0;
+	left: -5vh;
+	line-height: 0;
+	position: absolute;
+	top: 7vh;
 	width: 0;
-	margin-top: 2vh;
-	margin-left: -6vh;
 }
-
-.message-likes-n-comments {
-	float: right;
-}
-
 .message-likes-n-comments>span {
 	margin: 0 10px;
 }

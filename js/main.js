@@ -27,8 +27,8 @@ function updateMessage(message) {
 	$(preffix + "img.author-img").attr('src', message.user.avatars.square140);
 	$(preffix + "figcaption").html(message.user.name);
 	$(preffix + "h4.message-title").html(message.title);
-	$(preffix + "p.message-text-content").html(message.body);
-	$(preffix + "em.message-date").html(message.updated_at);
+	$(preffix + "p.message-text").html(message.body);
+	$(preffix + "em.message-date.pull-left").html(message.updated_at);
 	$(preffix + "span.likes-number").html(message.likes_count);
 	$(preffix + "span.comments-number").html(message.comments_count);
 }
