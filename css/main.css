@@ -20,6 +20,10 @@ p,
     widows: 3;
   }
 
+a {
+  color: #8A1515;
+}
+
 header#header {
 	padding: 1vh 1vw;
 	position: fixed;
