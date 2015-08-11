@@ -146,6 +146,16 @@ footer#footer {
 	width: 100%;
 }
 
+#footer img {
+  height: 11vh;
+  margin: 2vh;
+}
+
+#footer a {
+  display: block;
+  float: right;
+}
+
 .animate-spin {
   -moz-animation: spin 2s infinite linear;
   -o-animation: spin 2s infinite linear;
