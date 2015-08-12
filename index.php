@@ -1,4 +1,5 @@
 <?php
+    header("Access-Control-Allow-Origin: *");
 	$url = 'https://demo.socialcast.com/api/messages.json ';
 	$email = 'emily@socialcast.com';
 	$password = 'demo';
