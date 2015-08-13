@@ -122,6 +122,11 @@ header#header {
 	margin-left: -6vh;
 }
 
+.message-date {
+	font-size: 13px;
+	color: #999;
+}
+
 .message-likes-n-comments {
 	float: right;
 }
