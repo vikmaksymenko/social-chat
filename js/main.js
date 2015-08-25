@@ -1,7 +1,7 @@
-! function() {
+(function() {
 	mainFlow();
     setInterval(mainFlow, 5000);
-}();
+})();
 
 function mainFlow() {
     $.getJSON("index.php", function(json) {
@@ -30,6 +30,13 @@ function updateMessage(message) {
     $(preffix + "em.message-date").html(new Date(message.updated_at).toLocaleString());
     $(preffix + "span.likes-number").html(message.likes_count);
     $(preffix + "span.comments-number").html(message.comments_count);
+
+    var imgs = "";
+    for(var i = 0; i < message.media_files.length; i++) {
+        imgs += "<img src='" + message.media_files[i].thumbnails.scaled480 + "' height='" + ($(window).height()/5) + "px'>";
+        console.log(imgs);
+    }
+    $(preffix + ".message-imgs").html(imgs);
 }
 
 function addMessage(message) {

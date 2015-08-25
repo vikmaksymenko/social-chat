@@ -122,6 +122,11 @@ header#header {
 	margin-left: -6vh;
 }
 
+.message-footer {
+  font-size: 0.8em;
+  color: #777;
+}
+
 .message-likes-n-comments {
 	float: right;
 }
