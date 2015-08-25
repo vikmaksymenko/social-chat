@@ -27,7 +27,7 @@ function updateMessage(message) {
     $(preffix + "figcaption").html(message.user.name);
     $(preffix + "h4.message-title").html(message.title);
     $(preffix + "p.message-text-content").html($(message.html_body).html());
-    $(preffix + "em.message-date").html(new Date(message.updated_at).toLocaleString());
+    $(preffix + "em.message-date").html(formatDate(new Date(message.updated_at)));
     $(preffix + "span.likes-number").html(message.likes_count);
     $(preffix + "span.comments-number").html(message.comments_count);
 
@@ -43,4 +43,24 @@ function addMessage(message) {
     var newMessage = $("div.message.dummy").clone().removeClass("dummy").attr("id", message.id).prependTo("div.main");
     updateMessage(message);
     newMessage.removeClass("hidden");
+}
+
+function formatDate(date) {
+    var day;
+    var today = new Date();
+    
+    if(today.getDate() === date.getDate()) {
+        day = "Today";
+    } else if(today.getDate() - 1 === date.getDate()) {
+        day = "Yesterday";
+    } else {
+        day = date.toLocaleDateString();
+    }
+    
+    var minutes = date.getMinutes();
+    if(minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    
+    return day + " " + date.getHours() + ":" + minutes;
 }
